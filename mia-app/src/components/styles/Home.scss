@@ -16,6 +16,7 @@
 .leftPanel  {
   @include flex (column);
   @include size(55%, 100%, 4rem);
+  padding-bottom: 1rem;
   color: var(--color-000);
 }
 
@@ -141,6 +142,7 @@
 .rightPanel {
   @include flex (column);
   @include size (30%, auto, 4rem);
+  padding-bottom: 1rem;
 }
 
 .developers-background {
@@ -281,7 +283,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 600px;
   background-color: rgba(0, 0, 0, 0.555);
   backdrop-filter: blur(4px);
   animation: bottom 2s ease-in-out forwards;

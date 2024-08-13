@@ -5,6 +5,7 @@
     @include font-text;
     @include flex;
     min-height: calc(80vh - 17px);
+    padding-bottom: 1rem
 }
 
 .text {

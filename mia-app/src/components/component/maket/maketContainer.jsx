@@ -8,6 +8,7 @@ import translations from '../../../utils/translations';
     landing_no_name: 'img/landing_no_name.jpg',
     landing_sushi_italy: "img/landing_sushi_italy.jpg",
     landing_dolce_vita: "img/DolceVita.png",
+    landing_test: "img/landing_test.jpg",
   }
 
 export function MaketContainer () {
@@ -35,9 +36,15 @@ export function MaketContainer () {
         description={translation.landingPageReact}
       />
       <ProjectUnit 
-        link='https://github.com/Takemyeye/landingPage'
+        link='https://github.com/Takemyeye/DolceVita'
         title='Sushi Italy'
         image={img.landing_dolce_vita} 
+        description={translation.landingPageReact}
+      />
+      <ProjectUnit 
+        link='https://github.com/Takemyeye/TEST'
+        title='Test'
+        image={img.landing_test} 
         description={translation.landingPageReact}
       />
     </div>
