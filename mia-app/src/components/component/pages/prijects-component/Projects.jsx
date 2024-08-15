@@ -1,16 +1,19 @@
 import React, { useMemo, useContext } from "react";
-import '../styles/projects.scss';
+import { ProjectUnit } from "../../../../ui/ProjectUnit";
 import ActiveContext from "../../../ActiveContext";
 import translations from "../../../../utils/translations";
-import { ProjectUnit } from "../../../../ui/ProjectUnit";
+import '../styles/projects.scss';
 
 const img = {
   ssPortfolio: 'img/SS-Portfolio.png',
   sushi: 'img/Sushi-Italia.jpg',  
-  ss: 'img/Soul-Swap.png',
   impactium: 'img/Impactium.jpg',
   compress: 'img/compress.png',
   dolcevita: 'img/DolceVita.png',
+  html: 'img/html.png',
+  react: 'img/react.png',
+  vue: 'img/vue.png',
+  angular: 'img/angular.png'
 }
 
 const Proud = () => {
@@ -31,27 +34,37 @@ const Proud = () => {
           link='https://impactium.fun'
           title='Impactium' 
           description={translation.descriptionWork1}
-          image={img.impactium} />
+          image={img.impactium} 
+          img={img.react}
+          />
         <ProjectUnit 
           link='https://example.com'
           title='Sushi Italia' 
           description={translation.descriptionWork2}
-          image={img.sushi} />
+          image={img.sushi} 
+          img={img.react}
+          />
         <ProjectUnit 
           link='https://soulswap-portfolio.netlify.app/'
-          title='Soul Swap' 
+          title='Portfolio SS' 
           description={translation.descriptionWork3}
-          image={img.ssPortfolio} />
+          image={img.ssPortfolio}
+          img={img.react}
+          />
         <ProjectUnit 
           link='https://belance-compress.netlify.app/'
           title='Belance Compress' 
           description={translation.descriptionWork4}
-          image={img.compress} />
+          image={img.compress}
+          img={img.react}
+          />
         <ProjectUnit 
           link='https://dolce-vita.netlify.app/'
           title='Dolce Vita' 
           description={translation.descriptionWork5}
-          image={img.dolcevita} />
+          image={img.dolcevita}
+          img={img.react}
+          />
       </div>
     </div>
   )

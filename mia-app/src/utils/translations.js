@@ -592,7 +592,6 @@ const translations = {
     team: "Zespół",
     privacyPolicy: "Polityka prywatności",
     termsOfService: "Warunki korzystania z usługi",
-
   }
 };
 
