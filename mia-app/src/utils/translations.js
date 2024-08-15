@@ -96,9 +96,11 @@ const translations = {
     submitReview: 'Submit Review',
 //Maket
     templates: "Our Templates",
-    readyToUseTemplates: "Templates Ready to Use",
-    someTemplates: "Some templates are created using React.js, HTML, CSS, SCSS, Less, and TypeScript. We offer a variety of templates to meet your unique needs and preferences. Our templates are suitable for various projects - from simple web pages to complex web applications. Templates on React.js provide dynamism and responsiveness, ideal for modern web applications.",
-    traditionalTemplates: "Traditional templates created with HTML and CSS are easy to use and adapt, suitable for most web projects. SCSS and Less allow for more organized and maintainable styles, which is especially useful for large projects.",
+    technologiesTitle: 'Technologies We Use',
+    html: 'The basic language of the web. Easy to learn and perfect for creating landing pages. It’s the foundation for React and other frameworks.',
+    react: 'A powerful library for building dynamic user interfaces. Easy to maintain and one of the top choices in the market for UI development.',
+    vue: 'A progressive framework that\'s perfect for both beginners and advanced users. Easy to learn and integrate into projects.',
+    angular: 'A robust framework for building large-scale applications. Known for its comprehensive tooling and strong typing support.',
     landingPageReact: "This landing page is created using React.js and CSS. The project is of initial complexity level and demonstrates how easy it is to create a modern and responsive interface.",
 //Team
     ourTeam: "Our Team",
@@ -212,11 +214,13 @@ const translations = {
     review: 'Отзыв',
     shareThoughts: 'Поделитесь своими мыслями о нашей платформе',
     submitReview: 'Отправить отзыв',
-//Maket    
-    templates: "Наши макеты",
-    readyToUseTemplates: "Макеты, готовые к использованию",
-    someTemplates: "Некоторые макеты созданы с использованием React.js, HTML, CSS, SCSS, Less и TypeScript. Мы предлагаем разнообразные макеты, чтобы удовлетворить ваши уникальные потребности и предпочтения. Наши макеты подходят для различных проектов - от простых веб-страниц до сложных веб-приложений. Макеты на React.js обеспечивают динамичность и отзывчивость, что идеально подходит для современных веб-приложений.",
-    traditionalTemplates: "Традиционные макеты, созданные с использованием HTML и CSS, легки в использовании и адаптации, подходящие для большинства веб-проектов. SCSS и Less позволяют создавать более организованные и поддерживаемые стили, что особенно полезно для крупных проектов.",
+//Maket
+    templates: "Наши макеты", 
+    technologiesTitle: 'Технологии, которые мы используем',
+    html: 'Основной язык веб-разработки. Легкий для изучения и идеален для создания лендинг-пейджей. Является основой для React и других фреймворков.',
+    react: 'Мощная библиотека для создания динамических пользовательских интерфейсов. Легко поддерживать и один из лучших выборов на рынке для разработки UI.',
+    vue: 'Прогрессивный фреймворк, который идеально подходит как для новичков, так и для опытных пользователей. Легок в изучении и интеграции в проекты.',
+    angular: 'Мощный фреймворк для создания масштабных приложений. Известен своими обширными инструментами и поддержкой строгой типизации.',
     landingPageReact: "Этот лендинг-пейдж создан с использованием React.js и CSS. Проект имеет начальный уровень сложности и демонстрирует, как легко можно создать современный и отзывчивый интерфейс.",
 //Team    
     ourTeam: "Наша команда",
@@ -330,11 +334,13 @@ const translations = {
     review: 'Recensione',
     shareThoughts: 'Condividi i tuoi pensieri sulla nostra piattaforma',
     submitReview: 'Invia la recensione',
-//Maket    
+//Maket   
     templates: "I nostri modelli",
-    readyToUseTemplates: "Modelli pronti all'uso",
-    someTemplates: "Alcuni modelli sono creati utilizzando React.js, HTML, CSS, SCSS, Less e TypeScript. Offriamo una varietà di modelli per soddisfare le tue esigenze e preferenze uniche. I nostri modelli sono adatti a vari progetti - dalle semplici pagine web alle complesse applicazioni web. I modelli su React.js offrono dinamismo e reattività, ideali per le moderne applicazioni web.",
-    traditionalTemplates: "I modelli tradizionali creati con HTML e CSS sono facili da usare e adattare, adatti alla maggior parte dei progetti web. SCSS e Less consentono di creare stili più organizzati e mantenibili, particolarmente utili per grandi progetti.",
+    technologiesTitle: 'Tecnologie che Utilizziamo',
+    html: 'Il linguaggio di base del web. Facile da apprendere e perfetto per creare pagine di atterraggio. È la base per React e altri framework.',
+    react: 'Una potente libreria per costruire interfacce utente dinamiche. Facile da mantenere e una delle scelte migliori sul mercato per lo sviluppo dell\'interfaccia utente.',
+    vue: 'Un framework progressivo che è perfetto sia per principianti che per utenti avanzati. Facile da apprendere e integrare nei progetti.',
+    angular: 'Un framework robusto per costruire applicazioni su larga scala. Conosciuto per i suoi strumenti completi e il supporto per il typing forte.',
     landingPageReact: "Questa landing page è stata creata utilizzando React.js e CSS. Il progetto ha un livello di complessità iniziale e dimostra quanto sia facile creare un'interfaccia moderna e reattiva.",
 //Team    
     ourTeam: "Il nostro team",
@@ -450,9 +456,11 @@ const translations = {
     submitReview: 'Надіслати відгук',
 //Maket    
     templates: "Наші макети",
-    readyToUseTemplates: "Макети, готові до використання",
-    someTemplates: "Деякі макети створені з використанням React.js, HTML, CSS, SCSS, Less і TypeScript. Ми пропонуємо різноманітні макети, щоб задовольнити ваші унікальні потреби та вподобання. Наші макети підходять для різних проектів - від простих веб-сторінок до складних веб-додатків. Макети на React.js забезпечують динамічність і відгукливість, що ідеально підходить для сучасних веб-додатків.",
-    traditionalTemplates: "Традиційні макети, створені з використанням HTML і CSS, легкі у використанні та адаптації, підходять для більшості веб-проектів. SCSS і Less дозволяють створювати більш організовані та підтримувані стилі, що особливо корисно для великих проектів.",
+    technologiesTitle: 'Технології, які ми використовуємо',
+    html: 'Основна мова веб-розробки. Легка для вивчення та ідеальна для створення лендинг-сторінок. Являється основою для React та інших фреймворків.',
+    react: 'Потужна бібліотека для створення динамічних користувацьких інтерфейсів. Легка в обслуговуванні та один з найкращих виборів на ринку для розробки UI.',
+    vue: 'Прогресивний фреймворк, який ідеально підходить як для новачків, так і для досвідчених користувачів. Легкий у вивченні та інтеграції в проекти.',
+    angular: 'Міцний фреймворк для створення масштабних додатків. Відомий своїми широкими інструментами та підтримкою строгого типу.',
     landingPageReact: "Ця лендінгова сторінка створена з використанням React.js і CSS. Проект має початковий рівень складності та демонструє, як легко створити сучасний та адаптивний інтерфейс.",
 //Team    
     ourTeam: "Наша команда",
@@ -568,9 +576,11 @@ const translations = {
     submitReview: 'Prześlij recenzję',
 //Maket    
     templates: "Nasze Szablony",
-    readyToUseTemplates: "Szablony gotowe do użycia",
-    someTemplates: "Niektóre szablony zostały stworzone przy użyciu React.js, HTML, CSS, SCSS, Less i TypeScript. Oferujemy różnorodne szablony, aby spełnić Twoje unikalne potrzeby i preferencje. Nasze szablony nadają się do różnych projektów - od prostych stron internetowych po złożone aplikacje internetowe. Szablony na React.js zapewniają dynamikę i responsywność, idealne dla nowoczesnych aplikacji internetowych.",
-    traditionalTemplates: "Tradycyjne szablony stworzone przy użyciu HTML i CSS są łatwe w użyciu i adaptacji, odpowiednie dla większości projektów internetowych. SCSS i Less pozwalają na tworzenie bardziej zorganizowanych i łatwiejszych w utrzymaniu stylów, co jest szczególnie przydatne w dużych projektach.",
+    technologiesTitle: 'Tecnologie che Utilizziamo',
+    html: 'Podstawowy język webowy. Łatwy do nauki i idealny do tworzenia stron docelowych. Jest podstawą dla React i innych frameworków.',
+    react: 'Potężna biblioteka do budowania dynamicznych interfejsów użytkownika. Łatwy w utrzymaniu i jeden z najlepszych wyborów na rynku do rozwoju UI.',
+    vue: 'Postępowy framework, który jest idealny zarówno dla początkujących, jak i zaawansowanych użytkowników. Łatwy do nauki i integracji w projektach.',
+    angular: 'Solidny framework do budowania dużych aplikacji. Znany z rozbudowanych narzędzi i wsparcia dla silnego typowania.',
     landingPageReact: "Ta strona docelowa została stworzona przy użyciu React.js i CSS. Projekt ma początkowy poziom złożoności i pokazuje, jak łatwo można stworzyć nowoczesny i responsywny interfejs.",
 //Team
     ourTeam: "Nasz zespół",

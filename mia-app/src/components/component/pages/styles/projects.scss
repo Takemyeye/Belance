@@ -44,6 +44,15 @@
       color: var(--color-000);
       font-weight: 500;
     }
+    img {
+      width: 34px;
+      height: 34px;
+    }
+}
+
+.project-title {
+  @include size (100%);
+  @include flex (row, space-between,  center);
 }
 
 .wallpaper {

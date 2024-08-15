@@ -1,11 +1,11 @@
 import { useMemo, useContext } from "react";
-import Header from "../components/Header";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faGithub, faGoogle } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
-import '../components/styles/register.scss';
-import translations from "../utils/translations";
 import ActiveContext from "../components/ActiveContext";
+import translations from "../utils/translations";
+import Header from "../components/Header";
+import '../components/styles/register.scss';
 
 export function Register () {
   const { language } = useContext(ActiveContext);

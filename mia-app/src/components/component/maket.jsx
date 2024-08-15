@@ -1,12 +1,11 @@
 import React, { useMemo, useContext } from 'react';
 import { MaketContainer } from "./maket/maketContainer";
+import { MaketUnit } from './maket/maketUnit';
 import ActiveContext from '../ActiveContext';
 import translations from '../../utils/translations';
-import { Text } from "./maket/Text";
 import Header from "../Header";
 import Footer from "./footer";
 import "../styles/maket.scss";
-
 
 const Maket = () => {
   const { language } = useContext(ActiveContext);
@@ -16,12 +15,11 @@ const Maket = () => {
     <>
       <Header/>
       <div className="maket">
-        <Text 
-          h5={translation.templates}
-          h1={translation.readyToUseTemplates}
-          h3={translation.someTemplates}
-          h3_2={translation.traditionalTemplates}
-        />
+        <div className='text'>
+          <h5>{translation.templates}</h5>
+          <h1>  {translation.technologiesTitle}</h1>   
+        </div>    
+        <MaketUnit/>
         <MaketContainer/>
       </div>
       <Footer/>

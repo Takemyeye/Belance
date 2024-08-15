@@ -1,0 +1,18 @@
+@import '../../../../main.scss';
+
+.cardMaket {
+  @include flex;
+  @include size (100%, 25vh, 2rem);
+
+  img {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.textMaket{
+  @include size (80%, auto, 8px);
+  @include flex;
+  text-align: center;
+}
+

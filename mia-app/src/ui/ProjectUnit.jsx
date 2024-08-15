@@ -1,4 +1,4 @@
-export function ProjectUnit({ link, image, title, description, }) {
+export function ProjectUnit({ link, image, title, description, img }) {
   return (
     <div className="projects">
       <div className="wallpaper">
@@ -7,7 +7,10 @@ export function ProjectUnit({ link, image, title, description, }) {
         </a>
       </div>
       <div className="description-projects">
-        <h3>{title}</h3>
+        <div className="project-title">
+          <h3>{title}</h3>
+          <img src={img} alt="" />
+        </div>
         <h4>{description}..</h4>
       </div>
     </div>

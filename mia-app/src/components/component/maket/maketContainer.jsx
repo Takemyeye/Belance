@@ -9,6 +9,10 @@ import translations from '../../../utils/translations';
     landing_sushi_italy: "img/landing_sushi_italy.jpg",
     landing_dolce_vita: "img/DolceVita.png",
     landing_test: "img/landing_test.jpg",
+    html: 'img/html.png',
+    react: 'img/react.png',
+    vue: 'img/vue.png',
+    angular: 'img/angular.png'
   }
 
 export function MaketContainer () {
@@ -22,30 +26,35 @@ export function MaketContainer () {
         title='Deploy.Ai'
         image={img.landing_deploy} 
         description={translation.landingPageReact}
+        img={img.react}
       />
       <ProjectUnit 
         link='https://github.com/Takemyeye/landingPage'
         title='No Name'
         image={img.landing_no_name} 
         description={translation.landingPageReact}
+        img={img.react}
       />
       <ProjectUnit 
         link='https://github.com/Takemyeye/Sushi-Italia'
         title='Sushi Italy'
         image={img.landing_sushi_italy} 
         description={translation.landingPageReact}
+        img={img.react}
       />
       <ProjectUnit 
         link='https://github.com/Takemyeye/DolceVita'
         title='Sushi Italy'
         image={img.landing_dolce_vita} 
         description={translation.landingPageReact}
+        img={img.react}
       />
       <ProjectUnit 
         link='https://github.com/Takemyeye/TEST'
         title='Test'
         image={img.landing_test} 
         description={translation.landingPageReact}
+        img={img.react}
       />
     </div>
   )
