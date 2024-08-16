@@ -1,6 +1,6 @@
 @import '../../../../main.scss';
 
-.maketUnit {
+.maketCard {
   @include size (100%, auto, 2rem);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -8,14 +8,14 @@
 }
 
 @media all and (max-width: 1024px) {  
-  .maketUnit {
+  .maketCard {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
   }
 }
 
 @media all and (max-width: 510px) {  
-  .maketUnit {
+  .maketCard {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
   }

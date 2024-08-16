@@ -11,12 +11,12 @@ const img = {
   angular: 'img/angular.png'
 };
 
-export function MaketUnit() {
+export function MaketCards () {
   const { language } = useContext(ActiveContext);
   const translation = useMemo(() => translations[language], [language]);
 
   return (
-    <div className="maketUnit">
+    <div className="maketCard">
       <CardMaket
         img={img.html}
         title="HTML"
