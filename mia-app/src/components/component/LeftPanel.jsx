@@ -7,7 +7,7 @@ const LeftPanel = () => {
   return (
    <div className="leftPanel">
     <Belance/>
-     <Description/>
+    <Description/>
    </div>
   );
 };

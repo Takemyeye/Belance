@@ -1,23 +1,15 @@
 import React from "react";
-import './styles/about.scss';
+import { AboutContainer } from "./abaut-component/aboutContainer";
 import Header from "../../Header";
-import LeftPanel from "./abaut-component/leftPanel";
-import RightPanel from "./abaut-component/rightPanel";
-import Information from "./abaut-component/information";
 import Footer from "../footer";
+import './styles/about.scss';
 
 const About = () => {
 
   return(
     <>
       <Header/>
-      <div className="main-container">
-        <div className="main">
-          <LeftPanel/>
-          <RightPanel/>
-        </div>
-        <Information/>
-      </div>
+      <AboutContainer/>
       <Footer/>
     </>
   )

@@ -9,7 +9,7 @@ const Belance = () => {
     <div className="belance-background">
       <div className="belance">
        <BelanceUnitLeft/>
-      <BelanceUnitRight/>
+        <BelanceUnitRight/>
       </div>
     </div>
   );
