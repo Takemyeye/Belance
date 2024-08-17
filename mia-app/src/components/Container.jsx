@@ -1,5 +1,5 @@
 import React from "react";
-import RightPanel from "./component/RightPanel";
+import RightPanel from "./component/belance/RightPanel";
 import LeftPanel from "./component/LeftPanel";
 
 const Container = () => {

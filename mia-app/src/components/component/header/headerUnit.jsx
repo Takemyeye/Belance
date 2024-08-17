@@ -2,16 +2,7 @@ import React from "react";
 import { faInstagram, faTelegram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight} from "@fortawesome/free-solid-svg-icons";
-import { SocialUnit } from "./social/socialUnit";
-import { Link } from "react-router-dom";
-
-export function HeaderUnit({ link, text }) {
-  return (
-    <Link to={link}>
-      <div className="left-container"> {text} </div>
-    </Link>
-  );
-}
+import { SocialUnit } from "../social/socialUnit";
 
 export function Navigation({ text, isOpen, onClick }) {
   

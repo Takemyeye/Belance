@@ -1,7 +1,7 @@
 import React, { useContext, useMemo} from "react";
 import { LanguageUnit } from "./languageUnit";
-import ActiveContext from "../ActiveContext";
-import translations from "../../utils/translations";
+import ActiveContext from "../../ActiveContext";
+import translations from "../../../utils/translations";
 
 const img = ['img/Italy.svg', 'img/England.svg', 'img/Russia.svg', 'img/Ukraine.svg', 'img/Poland.svg'];
 

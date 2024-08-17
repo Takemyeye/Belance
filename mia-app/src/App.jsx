@@ -9,7 +9,7 @@ import Landing from './components/LandingPage';
 import Home from './components/Home';
 import About from './components/component/pages/About';
 import Works from './components/component/pages/Works';
-import Maket from './components/component/maket';
+import Maket from './components/component/maketComponent/maket';
 import './App.scss';
 
 const ProtectedRoute = ({ element: Element }) => {

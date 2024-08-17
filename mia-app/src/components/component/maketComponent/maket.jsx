@@ -1,8 +1,8 @@
 import React from 'react';
-import { MaketContainer } from "./maket/maketContainer";
-import Header from "../Header";
-import Footer from "./footer";
-import "../styles/maket.scss";
+import { MaketContainer } from "./maketContainer";
+import Header from '../../Header';
+import Footer from '../../footer/footer';
+import "./styles/maket.scss";
 
 const Maket = () => {
 

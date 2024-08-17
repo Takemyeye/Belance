@@ -1,7 +1,8 @@
 import React, { useState, useMemo, useContext, useEffect } from "react";
-import { HeaderUnit, Navigation } from "./headerUnit";
-import translations from "../../utils/translations";
-import ActiveContext from "../ActiveContext";
+import { Navigation } from "./headerUnit";
+import { HeaderLink } from "./headerLink";
+import translations from "../../../utils/translations";
+import ActiveContext from "../../ActiveContext";
 
 export function NavBar() {
   const { language } = useContext(ActiveContext);
@@ -26,11 +27,11 @@ export function NavBar() {
 
   return (
     <>
-      <HeaderUnit 
+      <HeaderLink 
         link='/about' 
         text={translation.about} 
       />
-      <HeaderUnit 
+      <HeaderLink 
         link="https://mail.google.com/mail/u/0/#search/mellovan2005%40gmail.com" 
         text={translation.contactUs} 
       />

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext, useMemo } from "react";
+import { Notifications } from "./notifications";
 import ActiveContext from "../ActiveContext";
 import translations from "../../utils/translations";
-import { Notifications } from "./notifications";
 
 const NotificationBlock = () => {
   const { language } = useContext(ActiveContext);

@@ -1,6 +1,6 @@
 import React from "react";
-import RightPanelBottom from './pages/Works_Scroll';
-import Developers from './pages/Developers';
+import RightPanelBottom from '../pages/Works_Scroll';
+import Developers from '../pages/Developers';
 
 const RightPanel = () => {
 

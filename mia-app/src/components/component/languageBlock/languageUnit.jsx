@@ -1,5 +1,5 @@
 import {  useContext } from 'react';
-import ActiveContext from '../ActiveContext';
+import ActiveContext from '../../ActiveContext';
 
 export function LanguageUnit ({img, text, language}){
   const { handleLanguageChange } = useContext(ActiveContext);
