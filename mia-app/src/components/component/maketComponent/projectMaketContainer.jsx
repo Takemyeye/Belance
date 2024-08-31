@@ -9,10 +9,11 @@ import translations from '../../../utils/translations';
     landing_sushi_italy: "img/landing_sushi_italy.jpg",
     landing_dolce_vita: "img/DolceVita.png",
     landing_test: "img/landing_test.jpg",
+    landing_SoulSwap: "img/landing_Soulswap.png",
     html: 'img/html.png',
     react: 'img/react.png',
     vue: 'img/vue.png',
-    angular: 'img/angular.png'
+    angular: 'img/angular.png',
   }
 
 export function ProjectContainer () {
@@ -35,6 +36,13 @@ export function ProjectContainer () {
         description={translation.landingPageReact}
         img={img.react}
       />
+        <ProjectUnit 
+          link='https://github.com/Takemyeye/SS-Vue'
+          title='Soul Swap'
+          image={img.landing_SoulSwap} 
+          description={translation.LandingPageVue}
+          img={img.vue}
+        />
       <ProjectUnit 
         link='https://github.com/Takemyeye/Sushi-Italia'
         title='Sushi Italy'

@@ -102,7 +102,8 @@ const translations = {
     vue: 'A progressive framework that\'s perfect for both beginners and advanced users. Easy to learn and integrate into projects.',
     angular: 'A robust framework for building large-scale applications. Known for its comprehensive tooling and strong typing support.',
     landingPageReact: "This landing page is created using React.js and CSS. The project is of initial complexity level and demonstrates how easy it is to create a modern and responsive interface.",
-//Team
+    LandingPageVue: "This Landing Page Is Created Using Vue.js And CSS. The Project Has A Beginner Level Of Complexity And Demonstrates How Easily A Modern And Responsive Interface Can Be Created Using The Capabilities Of Reactive Programming And The Component-Based Approach Of Vue.",
+    //Team
     ourTeam: "Our Team",
     meetOurTeam: "Meet Our Team",
     teamDescription: "The talented individuals who make our company great.",
@@ -222,7 +223,8 @@ const translations = {
     vue: 'Прогрессивный фреймворк, который идеально подходит как для новичков, так и для опытных пользователей. Легок в изучении и интеграции в проекты.',
     angular: 'Мощный фреймворк для создания масштабных приложений. Известен своими обширными инструментами и поддержкой строгой типизации.',
     landingPageReact: "Этот лендинг-пейдж создан с использованием React.js и CSS. Проект имеет начальный уровень сложности и демонстрирует, как легко можно создать современный и отзывчивый интерфейс.",
-//Team    
+    landingPageVue: "Этот лендинг-пейдж создан с использованием Vue.js и CSS. Проект имеет начальный уровень сложности и демонстрирует, как легко можно создать современный и отзывчивый интерфейс, используя возможности реактивного программирования и компонентного подхода Vue.",
+    //Team    
     ourTeam: "Наша команда",
     meetOurTeam: "Встречайте нашу команду",
     teamDescription: "Талантливые люди, делающие нашу компанию великой.",
@@ -342,7 +344,8 @@ const translations = {
     vue: 'Un framework progressivo che è perfetto sia per principianti che per utenti avanzati. Facile da apprendere e integrare nei progetti.',
     angular: 'Un framework robusto per costruire applicazioni su larga scala. Conosciuto per i suoi strumenti completi e il supporto per il typing forte.',
     landingPageReact: "Questa landing page è stata creata utilizzando React.js e CSS. Il progetto ha un livello di complessità iniziale e dimostra quanto sia facile creare un'interfaccia moderna e reattiva.",
-//Team    
+    LandingPageVue: "Questa pagina di atterraggio è creata utilizzando Vue.js e CSS. Il progetto ha un livello di difficoltà base e dimostra quanto sia facile creare un'interfaccia moderna e reattiva sfruttando le capacità della programmazione reattiva e l'approccio basato sui componenti di Vue.",
+    //Team    
     ourTeam: "Il nostro team",
     meetOurTeam: "Incontra il nostro team",
     teamDescription: "Le persone talentuose che rendono grande la nostra azienda.",
@@ -462,7 +465,8 @@ const translations = {
     vue: 'Прогресивний фреймворк, який ідеально підходить як для новачків, так і для досвідчених користувачів. Легкий у вивченні та інтеграції в проекти.',
     angular: 'Міцний фреймворк для створення масштабних додатків. Відомий своїми широкими інструментами та підтримкою строгого типу.',
     landingPageReact: "Ця лендінгова сторінка створена з використанням React.js і CSS. Проект має початковий рівень складності та демонструє, як легко створити сучасний та адаптивний інтерфейс.",
-//Team    
+    LandingPageVue: "Ця лендінг-сторінка створена за допомогою Vue.js та CSS. Проект має початковий рівень складності та демонструє, наскільки легко можна створити сучасний і чутливий інтерфейс, використовуючи можливості реактивного програмування та компонентний підхід Vue.",
+    //Team    
     ourTeam: "Наша команда",
     meetOurTeam: "Знайомтеся з нашою командою",
     teamDescription: "Талановиті люди, які роблять нашу компанію чудовою.",
@@ -582,7 +586,8 @@ const translations = {
     vue: 'Postępowy framework, który jest idealny zarówno dla początkujących, jak i zaawansowanych użytkowników. Łatwy do nauki i integracji w projektach.',
     angular: 'Solidny framework do budowania dużych aplikacji. Znany z rozbudowanych narzędzi i wsparcia dla silnego typowania.',
     landingPageReact: "Ta strona docelowa została stworzona przy użyciu React.js i CSS. Projekt ma początkowy poziom złożoności i pokazuje, jak łatwo można stworzyć nowoczesny i responsywny interfejs.",
-//Team
+    LandingPageVue: "Ta strona docelowa została stworzona z użyciem Vue.js i CSS. Projekt ma podstawowy poziom trudności i pokazuje, jak łatwo można stworzyć nowoczesny i responsywny interfejs, wykorzystując możliwości programowania reaktywnego i podejście oparte na komponentach Vue.",
+    //Team
     ourTeam: "Nasz zespół",
     meetOurTeam: "Poznaj nasz zespół",
     teamDescription: "Utalentowane osoby, które sprawiają, że nasza firma jest wspaniała.",
