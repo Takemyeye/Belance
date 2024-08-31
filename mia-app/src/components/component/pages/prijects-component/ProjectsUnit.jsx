@@ -10,6 +10,7 @@ const img = {
   impactium: 'img/Impactium.jpg',
   compress: 'img/compress.png',
   dolcevita: 'img/DolceVita.png',
+  soulSwap: 'img/landing_SoulSwap.png',
   html: 'img/html.png',
   react: 'img/react.png',
   vue: 'img/vue.png',
@@ -57,6 +58,13 @@ export function ProjectContainer () {
         description={translation.descriptionWork5}
         image={img.dolcevita}
         img={img.react}
+        />
+        <ProjectUnit 
+        link='#'
+        title='SoulSwap' 
+        description={translation.descriptionWork6}
+        image={img.soulSwap}
+        img={img.vue}
         />
     </div>
   )
