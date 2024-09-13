@@ -11,8 +11,6 @@ export function Register () {
   const { language } = useContext(ActiveContext);
   const translation = useMemo(() => translations[language], [language]);
 
-  const GITHUB_CLIENT_ID = process.env.REACT_APP_GIT_CLIENT_ID;
-  const GITHUB_REDIRECT_URI = 'http://localhost:3000/';
 
   return (
     <>
@@ -27,11 +25,9 @@ export function Register () {
                     <div className="signAuth"> <FontAwesomeIcon icon={faDiscord} /> Continue with Discord </div>
                   </div>
                 </a>
-                <a href={`https://github.com/login/oauth/authorize?client_id=${GITHUB_CLIENT_ID}&redirect_uri=${encodeURIComponent(GITHUB_REDIRECT_URI)}&scope=user`}>
                   <div className="login">
                     <div className="signAuth"> <FontAwesomeIcon icon={faGithub} /> Continue with GitHub </div>
                   </div>
-                </a>
                 <div className="login">
                   <div className="lock"> <FontAwesomeIcon icon={faLock} /> </div>
                   <div className="signAuth"> <FontAwesomeIcon icon={faGoogle} /> Continue with Google </div>

@@ -5,7 +5,7 @@ import { ProfileUnit } from "./profileUnit";
 
 
 const ProfileData = () => {
-  const { language, user } = useContext(ActiveContext);
+  const { language } = useContext(ActiveContext);
   const translation = useMemo(() => translations[language], [language]);
 
   return (
@@ -16,18 +16,18 @@ const ProfileData = () => {
           </div>
           <div className="data-container">
             <ProfileUnit 
-              title={translation.name}
-              data={user.username}
+              title=''
+              data=''
               className="lock"
             />
             <ProfileUnit 
               title={translation.email}
-              data={user.email}
+              data=''
             />
           </div>
           <div className="userAvatar">
             <h3>{translation.profilePicture}</h3>
-            <img src={`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`} alt="" />
+            <img src="" alt="" />
           </div>
         </div>
   )
