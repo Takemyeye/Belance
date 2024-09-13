@@ -30,9 +30,9 @@ router.get('/auth/github/callback', passport.authenticate('github', { session: f
     });
 
     await newUser.save();
-    res.redirect(`http://localhost:8080?token=${token}`);
+    res.redirect(`http://localhost:3000?token=${token}`);
   } else {
-    res.redirect(`http://localhost:8080?token=${existingUser.token}`);
+    res.redirect(`http://localhost:3000?token=${existingUser.token}`);
   }
 });
 

@@ -25,9 +25,11 @@ export function Register () {
                     <div className="signAuth"> <FontAwesomeIcon icon={faDiscord} /> Continue with Discord </div>
                   </div>
                 </a>
+                <a href="http://localhost:3001/auth/github">
                   <div className="login">
                     <div className="signAuth"> <FontAwesomeIcon icon={faGithub} /> Continue with GitHub </div>
                   </div>
+                </a>
                 <div className="login">
                   <div className="lock"> <FontAwesomeIcon icon={faLock} /> </div>
                   <div className="signAuth"> <FontAwesomeIcon icon={faGoogle} /> Continue with Google </div>
