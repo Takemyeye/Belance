@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useContext, useState, useRef } from "react";
 import { ProfileSettings } from "./profileSettings";
-import { Link, useLocation } from "react-router-dom"; // Для получения данных из URL
+import { Link, useLocation } from "react-router-dom"; 
 import ActiveContext from "../ActiveContext";
 import translations from "../../utils/translations";
 
@@ -8,20 +8,17 @@ export function RightContainer() {
   const { language, user, setUser } = useContext(ActiveContext); 
   const [isPanelVisible, setIsPanelVisible] = useState(false);
   const userPanelRef = useRef(null);
-  const location = useLocation(); // Доступ к текущему URL
+  const location = useLocation();
 
   const translation = useMemo(() => translations[language], [language]);
 
   useEffect(() => {
-    // Проверяем, есть ли токен в URL
     const params = new URLSearchParams(location.search);
     const token = params.get('token');
     
     if (token) {
-      // Сохраняем токен в localStorage
-      localStorage.setItem('authToken', token);
+      localStorage.setItem('token', token);
 
-      // Здесь можно сделать запрос к API для получения информации о пользователе
       fetch('http://localhost:3001/api/current_user', {
         method: 'GET',
         headers: {
@@ -30,7 +27,6 @@ export function RightContainer() {
       })
       .then(response => response.json())
       .then(data => {
-        // Устанавливаем пользователя в контекст
         setUser(data);
       })
       .catch(err => console.error('Ошибка получения пользователя:', err));

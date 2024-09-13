@@ -31,9 +31,9 @@ router.get('/auth/discord/callback', passport.authenticate('discord', { session:
     });
 
     await newUser.save();
-    res.redirect(`http://localhost:8080?token=${token}`);
+    res.redirect(`http://localhost:3001?token=${token}`);
   } else {
-    res.redirect(`http://localhost:8080?token=${existingUser.token}`);
+    res.redirect(`http://localhost:3001?token=${existingUser.token}`);
   }
 });
 
