@@ -18,13 +18,19 @@ export const ActiveProvider = ({ children }) => {
     setUser(userData);
   };
 
+  const logout = () => {
+    localStorage.removeItem('token');
+    setUser(null);
+  }
+
   return (
     <ActiveContext.Provider
       value={{
         language,
         handleLanguageChange,
-        user,
         setUser: handleSetUser, 
+        logout,
+        user,
       }}
     >
       {children}

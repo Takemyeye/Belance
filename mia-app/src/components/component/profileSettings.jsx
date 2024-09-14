@@ -6,7 +6,6 @@ import {faGear, faRightFromBracket, faUser } from "@fortawesome/free-solid-svg-i
 
 export function ProfileSettings () {
   const { logout } = useContext(ActiveContext); 
-  
   const navigate = useNavigate(); 
 
   const handleLogout = () => {
