@@ -1,7 +1,6 @@
 import { useMemo, useContext } from "react";
 import { faDiscord, faGithub, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLock } from "@fortawesome/free-solid-svg-icons";
 import ActiveContext from "../components/ActiveContext";
 import translations from "../utils/translations";
 import Header from "../components/Header";
@@ -30,13 +29,16 @@ export function Register () {
                     <div className="signAuth"> <FontAwesomeIcon icon={faGithub} /> Continue with GitHub </div>
                   </div>
                 </a>
-                <div className="login">
-                  <div className="lock"> <FontAwesomeIcon icon={faLock} /> </div>
-                  <div className="signAuth"> <FontAwesomeIcon icon={faGoogle} /> Continue with Google </div>
-                </div>
+                <a href="http://localhost:3001/auth/google">
+                  <div className="login">
+                    <div className="signAuth"> <FontAwesomeIcon icon={faGoogle} /> Continue with Google </div>
+                  </div>
+                </a>
               </div>      
          </div>
       </div>
     </>
   )
 }
+
+/*<div className="lock"> <FontAwesomeIcon icon={faLock} /> </div>*/

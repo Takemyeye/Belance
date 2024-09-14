@@ -1,11 +1,11 @@
 import React, { useEffect, useMemo, useContext, useState, useRef } from "react";
 import { ProfileSettings } from "./profileSettings";
-import { Link, useLocation } from "react-router-dom"; 
+import { Link, useLocation } from "react-router-dom";
 import ActiveContext from "../ActiveContext";
 import translations from "../../utils/translations";
 
 export function RightContainer() {
-  const { language, user, setUser } = useContext(ActiveContext); 
+  const { language, user, setUser } = useContext(ActiveContext);
   const [isPanelVisible, setIsPanelVisible] = useState(false);
   const userPanelRef = useRef(null);
   const location = useLocation();
@@ -14,11 +14,15 @@ export function RightContainer() {
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
-    const token = params.get('token');
-    
-    if (token) {
-      localStorage.setItem('token', token);
+    const tokenFromUrl = params.get('token');
 
+    if (tokenFromUrl) {
+      localStorage.setItem('token', tokenFromUrl);
+    }
+
+    const token = localStorage.getItem('token');
+
+    if (token) {
       fetch('http://localhost:3001/api/current_user', {
         method: 'GET',
         headers: {
@@ -27,7 +31,9 @@ export function RightContainer() {
       })
       .then(response => response.json())
       .then(data => {
-        setUser(data);
+        if (data && data.username) {
+          setUser(data);
+        }
       })
       .catch(err => console.error('Ошибка получения пользователя:', err));
     }
@@ -46,14 +52,16 @@ export function RightContainer() {
         <div className="user-info">
           <img
             onClick={toggleDisplay}
-            src={`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`}
-            alt=""
+            src={user.avatar || "/default-avatar.png"}  
+            alt="User Avatar"
+            className="user-avatar"
           />
           <div className="user-panel" ref={userPanelRef}>
             <div className="user-info">
               <img
-                src={`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`}
-                alt=""
+                src={user.avatar || "/default-avatar.png"}
+                alt="User Avatar"
+                className="user-avatar"
               />
               <h3>{user.username}</h3>
             </div>

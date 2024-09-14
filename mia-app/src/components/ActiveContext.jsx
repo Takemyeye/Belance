@@ -4,14 +4,18 @@ const ActiveContext = createContext();
 
 export const ActiveProvider = ({ children }) => {
   const [language, setLanguage] = useState(localStorage.getItem('language') || 'it');
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
     localStorage.setItem('language', language);
   }, [language]);
 
-
   const handleLanguageChange = (lang) => {
     setLanguage(lang);
+  };
+
+  const handleSetUser = (userData) => {
+    setUser(userData);
   };
 
   return (
@@ -19,6 +23,8 @@ export const ActiveProvider = ({ children }) => {
       value={{
         language,
         handleLanguageChange,
+        user,
+        setUser: handleSetUser, 
       }}
     >
       {children}

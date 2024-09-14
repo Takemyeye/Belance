@@ -68,7 +68,6 @@ router.get('/auth/discord', passport.authenticate('discord', { scope: ['identify
 
 router.get('/auth/discord/callback', passport.authenticate('discord', { session: false }), handleAuthCallback);
 
-// Get Current User
 router.get('/api/current_user', async (req, res) => {
   const token = req.headers.authorization?.split(' ')[1];
   if (!token) {
