@@ -15,7 +15,7 @@ export function useFetchUser(setUser, user) {
     const token = localStorage.getItem('token');
 
     if (token && !user) {
-      fetch('http://localhost:3001/api/current_user', {
+      fetch('https://belance.vercel.app/api/current_user', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,

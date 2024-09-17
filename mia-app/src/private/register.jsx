@@ -24,12 +24,12 @@ export function Register () {
                     <div className="signAuth"> <FontAwesomeIcon icon={faDiscord} /> Continue with Discord </div>
                   </div>
                 </a>
-                <a href="http://localhost:3001/auth/github">
+                <a href="https://belance.vercel.app/auth/github">
                   <div className="login">
                     <div className="signAuth"> <FontAwesomeIcon icon={faGithub} /> Continue with GitHub </div>
                   </div>
                 </a>
-                <a href="http://localhost:3001/auth/google">
+                <a href="https://belance.vercel.app/auth/google">
                   <div className="login">
                     <div className="signAuth"> <FontAwesomeIcon icon={faGoogle} /> Continue with Google </div>
                   </div>
