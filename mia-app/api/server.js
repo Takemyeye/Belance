@@ -4,9 +4,9 @@ const githubAuthRoutes = require('./auth/authCompany/gitHubAuth');
 const authRoutes = require('./auth/auth');
 const passport = require('passport');
 const express = require('express');
+require('./auth/passport-setup');
 const path = require('path');
 const cors = require('cors');
-require('./auth/passport-setup');
 require('dotenv').config();
 
 const connectDB = require('./db');

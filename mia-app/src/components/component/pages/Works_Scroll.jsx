@@ -15,6 +15,7 @@ const RightPanelBottom = () => {
       'img/Sushi-Italia.jpg',
       'img/compress.png',
       'img/DolceVita.png',
+      'img/portfolio-vue.png'
     ],
     []
   );

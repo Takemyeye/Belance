@@ -5,16 +5,17 @@ import translations from "../../../../utils/translations";
 
 
 const img = {
-  ssPortfolio: 'img/SS-Portfolio.png',
-  sushi: 'img/Sushi-Italia.jpg',  
-  impactium: 'img/Impactium.jpg',
-  compress: 'img/compress.png',
-  dolcevita: 'img/DolceVita.png',
   soulSwap: 'img/landing_SoulSwap.png',
-  html: 'img/html.png',
+  ssPortfolio: 'img/SS-Portfolio.png',
+  portfolioVue: 'img/portfolio-vue.png',
+  impactium: 'img/Impactium.jpg',
+  dolcevita: 'img/DolceVita.png',
+  sushi: 'img/Sushi-Italia.jpg',  
+  compress: 'img/compress.png',
+  angular: 'img/angular.png',
   react: 'img/react.png',
+  html: 'img/html.png',
   vue: 'img/vue.png',
-  angular: 'img/angular.png'
 }
 
 export function ProjectContainer () {
@@ -64,6 +65,13 @@ export function ProjectContainer () {
         title='SoulSwap' 
         description={translation.descriptionWork6}
         image={img.soulSwap}
+        img={img.vue}
+        />
+        <ProjectUnit 
+        link='https://oleh-portfolio-vue.netlify.app/'
+        title='Portfolio' 
+        description={translation.descriptionWork7}
+        image={img.portfolioVue}
         img={img.vue}
         />
     </div>

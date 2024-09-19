@@ -4,16 +4,17 @@ import ActiveContext from '../../ActiveContext';
 import translations from '../../../utils/translations';
 
   const img = {
-    landing_deploy: 'img/landing_deploy.png',
-    landing_no_name: 'img/landing_no_name.jpg',
     landing_sushi_italy: "img/landing_sushi_italy.jpg",
-    landing_dolce_vita: "img/DolceVita.png",
-    landing_test: "img/landing_test.jpg",
     landing_SoulSwap: "img/landing_Soulswap.png",
-    html: 'img/html.png',
-    react: 'img/react.png',
-    vue: 'img/vue.png',
+    landing_no_name: 'img/landing_no_name.jpg',
+    landing_deploy: 'img/landing_deploy.png',
+    landing_dolce_vita: "img/DolceVita.png",
+    portfolioVue: 'img/portfolio-vue.png',
+    landing_test: "img/landing_test.jpg",
     angular: 'img/angular.png',
+    react: 'img/react.png',
+    html: 'img/html.png',
+    vue: 'img/vue.png',
   }
 
 export function ProjectContainer () {
@@ -63,6 +64,13 @@ export function ProjectContainer () {
         image={img.landing_test} 
         description={translation.landingPageReact}
         img={img.react}
+      />
+      <ProjectUnit 
+        link='https://github.com/Takemyeye/TEST'
+        title='Test'
+        image={img.portfolioVue} 
+        description={translation.LandingPageVue}
+        img={img.vue}
       />
     </div>
   )
