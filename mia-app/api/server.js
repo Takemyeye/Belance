@@ -30,10 +30,6 @@ app.use('/', discordAuthRoutes);
 
 app.use('/api', authRoutes);
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../build/index.html'));
-});
-
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
