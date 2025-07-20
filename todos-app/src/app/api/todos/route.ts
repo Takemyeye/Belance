@@ -3,10 +3,10 @@ interface Todo {
   title: string;
 }
 
-let todos: Todo[] = [
+const todos: Todo[] = [
   { id: 1, title: 'Купить хлеб' },
   { id: 2, title: 'Сделать проект' },
-  { id: 3, title: 'Отсосать хуй' },
+  { id: 3, title: 'Получить Офер' },
 ];
 
 export async function GET() {
