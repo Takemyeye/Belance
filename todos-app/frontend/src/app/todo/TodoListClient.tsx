@@ -20,7 +20,7 @@ export default function TodoListClient({ initialTodos }: Props) {
     if (!newTitle.trim()) return;
     setLoading(true);
 
-    const res = await fetch('/api/todos', {
+    const res = await fetch('http://localhost:3001/api/todos', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ title: newTitle }),
@@ -35,8 +35,15 @@ export default function TodoListClient({ initialTodos }: Props) {
     setLoading(false);
   };
 
-  function deleteTodo(id: Todo['id']) {
-    setTodos(prev => prev.filter(todo => todo.id !== id));
+  async function deleteTodo(id: number) {
+     const deleteRes = await fetch(`http://localhost:3001/api/todos/${id}`, {
+      method: 'DELETE',
+    });
+
+    if(deleteRes.ok) {
+      setTodos(todo => todo.filter(todo => todo.id !== id));
+      console.log(deleteRes)
+    }
   };
 
   return (
