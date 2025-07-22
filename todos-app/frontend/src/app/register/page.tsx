@@ -1,39 +1,32 @@
 'use client';
 
+import Cookies from 'js-cookie';
 import { useState } from 'react';
-
-interface Data {
-  name: string,
-  email: string,
-  message: string
-}
+import { useUser } from '../context/UserContext';
 
 export default function RegisterPage() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
+
+  const { setUser } = useUser();
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
 
     try {
-      console.log(name, email);
-      
-      const res = await fetch('/api/register', {
+      const res = await fetch('http://localhost:3001/api/user', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email }),
+        body: JSON.stringify({ name, email, password }),
       });
 
       if (res.ok) {
-        const data:Data = await res.json();
-        console.log("Response data:", data);
-
-        setMessage(`${data.message}, ${data.name} (${data.email})`);
-        setName('');
-        setEmail('');
-      } else {
-        setMessage('Error registering');
+        const data = await res.json();
+        Cookies.set('token', data.token);
+        setMessage('user created');
+        setUser(data.user);
       }
     } catch (error) {
       setMessage('Network error');
@@ -60,6 +53,16 @@ export default function RegisterPage() {
             type="email"
             value={email}
             onChange={e => setEmail(e.target.value)}
+            required
+            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-700"
+          />
+        </label>
+        <label className="block">
+          <span className="text-gray-700">password:</span>
+          <input
+            type="password"
+            value={password}
+            onChange={e => setPassword(e.target.value)}
             required
             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-700"
           />

@@ -1,4 +1,7 @@
+import TodoListClient from './TodoListClient';
+
 // SSR
+
 interface Todo {
   id: number;
   title: string;
@@ -11,7 +14,7 @@ async function getTodos(): Promise<Todo[]> {
     cache: 'no-store' });
   return res.json();
 }
-import TodoListClient from './TodoListClient';
+
 
 
 export default async function TodoListPage() {

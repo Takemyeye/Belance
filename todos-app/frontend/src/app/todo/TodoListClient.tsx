@@ -45,7 +45,6 @@ export default function TodoListClient({ initialTodos }: Props) {
       console.log(deleteRes)
     }
   };
-
   return (
     <div className="max-w-md mx-auto p-6">
       <div className="flex gap-2">
