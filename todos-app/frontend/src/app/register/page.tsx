@@ -24,7 +24,7 @@ export default function RegisterPage() {
 
       if (res.ok) {
         const data = await res.json();
-        Cookies.set('token', data.token);
+        Cookies.set('token', data.token, { expires: 1 });
         setMessage('user created');
         setUser(data.user);
       }
