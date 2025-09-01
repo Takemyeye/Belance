@@ -2,7 +2,7 @@ import { User } from '@prisma/client';
 import { Id } from './addon/user.decorator';
 import { UserService } from './user.service';
 import { AuthGuard } from '../guard/auth.guard';
-import { Controller, Get, Post, UseGuards, Body } from '@nestjs/common';
+import { Controller, Get, Post, UseGuards, Body, Delete, Param } from '@nestjs/common';
 
 @Controller('user')
 export class UserController {
@@ -20,5 +20,12 @@ export class UserController {
   createUser(@Body() body: { name: string; email: string; password: string }) { 
     const { name, email, password } = body;
     return this.userService.create(name, email, password);
+  }
+
+  // delete
+  @Delete(':id')
+  deleteUser(@Param('id') id: string){
+    this.userService.deleteUser(id);
+    return { message: "Deleted" }
   }
 }

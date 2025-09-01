@@ -10,7 +10,6 @@ export async function getUserFromRequest() {
     const res = await fetch('http://localhost:3001/api/user/current', {
       headers: {
         Authorization: `Bearer ${token}`,
-        credentials: 'include'
       },
       cache: 'no-store'
     });

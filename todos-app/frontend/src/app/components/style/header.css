@@ -1,15 +1,16 @@
-.header-container {
+header {
   width: 100%;
-  height: 10vh;
+  padding: 0 5%;
   display: flex;
   align-items: center;
-  flex-direction: row;
-  justify-content: space-around;
-  border-bottom: 1px rgba(255, 255, 255, 0.250) solid;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.150);
 }
 
 nav {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }

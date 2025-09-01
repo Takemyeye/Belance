@@ -3,24 +3,27 @@ import UserPanel from "./userPanel";
 
 import './style/header.css'
 
-export default function Header() {
+type HeaderProps = {
+  showPanel?: boolean
+}
+
+export default function Header({ showPanel = true }: HeaderProps) {
   return (
     <header>
-      <div className="header-container">
+      <Link href="/">
         <h1>Todo</h1>
+      </Link>
+      {showPanel && (
         <nav>
           <Link href="/">
             <h3>Home</h3>
-          </Link>
-          <Link href="/todo">
-            <h3>Todo</h3>
           </Link> 
-          <Link href="https://github.com/Takemyeye">
-            <h3>Git</h3>
+          <Link href="/about">
+            <h3>About</h3>
           </Link>
         </nav>
-        <UserPanel/>
-      </div>
+      )}
+      <UserPanel/>
     </header>
   );
 }
