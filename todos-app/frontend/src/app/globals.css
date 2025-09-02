@@ -20,12 +20,20 @@ inline {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 24px;
 }
 
 h3 {
   font-size: 18px;
   opacity: 0.9;
+}
+
+h5 {
+  opacity: 0.8;
 }
 
 body {

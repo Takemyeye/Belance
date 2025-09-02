@@ -11,7 +11,7 @@ export default function Header({ showPanel = true }: HeaderProps) {
   return (
     <header>
       <Link href="/">
-        <h1>Todo</h1>
+        <h1>Belance</h1>
       </Link>
       {showPanel && (
         <nav>
