@@ -1,16 +1,20 @@
 import './styles/reg_btn.css';
 
 type ButtonProps = {
-  imageUrl: string;
+  imageUrl?: string;
+  btnType: boolean;
   text: string;
+  type?: "button" | "submit" | "reset";
 }
 
-export default function RegButton({imageUrl, text}: ButtonProps ) {
+export default function RegButton({imageUrl, btnType, text, type = "button"}: ButtonProps ) {
 
   return (
-     <button className="reg_btn">
-      <img src={imageUrl} style={{ width: "24px", height: "24px"}} alt="image" />
-      <h5>{text}</h5>
+     <button type={type} className="reg_btn" style={{ backgroundColor: btnType ? "whitesmoke" : "black" }}>
+      {imageUrl && (
+        <img src={imageUrl} style={{ width: "24px", height: "24px" }} alt="button icon" />
+      )}
+      <h5 style={{ color: btnType ? "black" : "whitesmoke" }}>{text}</h5>
     </button>
   )
 }

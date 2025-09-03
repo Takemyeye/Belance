@@ -47,7 +47,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .title {
@@ -74,6 +74,57 @@
 .line {
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.150);
+}
+
+form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+  padding: 1.5rem;
+  border-radius: 8px;
+  gap: 1rem;
+}
+
+.block {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.700);
+  font-size: 14px;
+  gap: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.250);
+  border-radius: 8px;
+}
+
+input:focus {
+  outline: 1px solid rgba(0, 0, 0, 0.550);
+}
+
+.switch_auth {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.reg_switch_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  gap: 8px;
 }
 
 .reg_right_container {

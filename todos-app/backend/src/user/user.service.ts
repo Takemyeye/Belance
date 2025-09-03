@@ -56,8 +56,6 @@ export class UserService {
 
     const token = jwt.sign({ id: user.id }, SECRET_KEY, { expiresIn: '1d' });
 
-    console.log("token:", token);
-
     return {
       token,
       user: {
