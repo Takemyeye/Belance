@@ -1,0 +1,12 @@
+.arroow_btn {
+  padding: 8px;
+  border-radius: 4px;
+  background-color: rgba(151, 151, 151, 0.2);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.arroow_btn:hover {
+  background-color: rgba(151, 151, 151, 0.350);
+  transform: scale(1.1);
+}

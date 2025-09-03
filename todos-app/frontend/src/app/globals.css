@@ -19,6 +19,17 @@ inline {
   }
 }
 
+.title {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  text-wrap: balance;
+  line-height: 1.2;
+  gap: 1rem;
+}
+
 h1 {
   font-size: 34px;
 }
@@ -30,6 +41,10 @@ h2 {
 h3 {
   font-size: 18px;
   opacity: 0.9;
+}
+
+h4 {
+  opacity: 0.8;
 }
 
 h5 {

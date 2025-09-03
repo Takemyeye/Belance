@@ -19,7 +19,7 @@ export default function InputField({
 }: InputFieldProps) {
   return (
     <label className="block">
-      <span>{label}<span style={{color: "red"}}>*</span></span>
+      <span>{label}</span>
       <input
         type={type}
         value={value}

@@ -71,7 +71,7 @@ export default function LeftContainer() {
             <InputField label="Email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter your email" required />
             <InputField label="Password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Enter your password" required />
 
-          <RegButton type="submit" btnType={false} text={`${isLogin ? "Login" : "Sign Up"}`}/>
+          <RegButton type="submit" btnType={true} text={`${isLogin ? "Login" : "Sign Up"}`}/>
         </form>
         <SwitchAuth isLogin={isLogin} setIsLogin={setIsLogin} />
       </div>

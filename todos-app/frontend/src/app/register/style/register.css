@@ -50,17 +50,6 @@
   gap: 2rem;
 }
 
-.title {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-  text-wrap: balance;
-  line-height: 1.2;
-  gap: 1rem;
-}
-
 .reg_line_container {
   width: 100%;
   display: flex;
@@ -82,10 +71,8 @@ form {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: whitesmoke;
-  padding: 1.5rem;
   border-radius: 8px;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .block {
@@ -94,7 +81,7 @@ form {
   align-items: start;
   justify-content: center;
   flex-direction: column;
-  color: rgba(0, 0, 0, 0.700);
+  color: rgba(255, 255, 255, 0.850);
   font-size: 14px;
   gap: 8px;
 }
@@ -102,6 +89,7 @@ form {
 input {
   width: 100%;
   padding: 8px;
+  background-color: rgba(190, 190, 190, 0.200);
   border: 1px solid rgba(0, 0, 0, 0.250);
   border-radius: 8px;
 }
@@ -134,15 +122,39 @@ input:focus {
   border-radius: 1rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: row;
   overflow: hidden;
   gap: 2rem;
 }
 
+.reg_right_container::before,
+.reg_right_container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.reg_right_container::before {
+  top: 0;
+  background: linear-gradient(to bottom, rgba(230, 230, 230, 300), rgba(255, 255, 255, 0));
+}
+
+.reg_right_container::after {
+  bottom: 0;
+  background: linear-gradient(to top, rgba(230, 230, 230, 300), rgba(255, 255, 255, 0));
+}
+
+
 .reg_right_container > img {
   width: 100%;
   height: 100%;
+  left: 0;
+  top: 0;
   position: absolute;
   object-fit: cover;
   border-radius: 1rem;
