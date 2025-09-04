@@ -5,12 +5,18 @@ type ButtonProps = {
   btnType: boolean;
   text: string;
   type?: "button" | "submit" | "reset";
+  onClick?: () => void; 
 }
 
-export default function RegButton({imageUrl, btnType, text, type = "button"}: ButtonProps ) {
+export default function RegButton({imageUrl, btnType, text, onClick, type = "button"}: ButtonProps ) {
 
   return (
-     <button type={type} className="reg_btn" style={{ backgroundColor: btnType ? "whitesmoke" : "black" }}>
+     <button 
+      type={type} 
+      className="reg_btn" 
+      style={{ backgroundColor: btnType ? "whitesmoke" : "black" }}
+      onClick={onClick}
+    >
       {imageUrl && (
         <img src={imageUrl} style={{ width: "24px", height: "24px" }} alt="button icon" />
       )}

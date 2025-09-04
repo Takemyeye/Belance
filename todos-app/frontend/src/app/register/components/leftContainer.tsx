@@ -56,8 +56,15 @@ export default function LeftContainer() {
           <h5>{isLogin ? "Log in to continue" : "Sign up to start your business"}</h5>
         </div>
 
-        <RegButton btnType={true} text="Continue with Google" imageUrl="/image/reg_google.svg" />
-
+        <RegButton 
+          btnType={true} 
+          text="Continue with Google" 
+          imageUrl="/image/reg_google.svg" 
+          onClick={() => {
+            window.location.href = 'http://localhost:3001/api/auth/google';
+          }}
+        />
+        
         <div className="reg_line_container">
           <span className="line"></span>
           <h5>or</h5>

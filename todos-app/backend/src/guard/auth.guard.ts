@@ -3,7 +3,7 @@ import { PrismaService } from 'src/prisma/prisma.service';
 import * as jwt from 'jsonwebtoken';
 import { Request } from 'express';
 
-const SECRET_KEY = process.env.SECRET_KEY;
+const SECRET_KEY = process.env.SECRET_KEY || "";
 
 @Injectable()
 export class AuthGuard implements CanActivate {
@@ -12,26 +12,29 @@ export class AuthGuard implements CanActivate {
   async canActivate(context: ExecutionContext): Promise<boolean> {
     const req: Request = context.switchToHttp().getRequest();
 
-
     const authHeader = req.headers['authorization'];
     const tokenFromHeader = authHeader?.startsWith('Bearer ')
       ? authHeader.slice(7)
       : null;
 
-    const tokenFromCookie = req.cookies?.token;
-    const tokenFromBody = req.body?.token;
-
-    const token = tokenFromHeader || tokenFromCookie || tokenFromBody;
+    const token = tokenFromHeader || req.cookies?.token || req.body?.token;
 
     if (!token) {
       throw new UnauthorizedException('No token provided');
     }
 
     try {
-      const decoded = jwt.verify(token, SECRET_KEY) as { id: string };
+      const decoded = jwt.verify(token, SECRET_KEY);
+
+      if (!decoded || typeof decoded !== 'object' || !('id' in decoded)) {
+        throw new UnauthorizedException('Invalid token');
+      }
+
+      const userId = (decoded as jwt.JwtPayload).id as string;
+
       const user = await this.prisma.user.findUnique({
-        where: { id: decoded.id },
-        select: { id:true }
+        where: { id: userId },
+        select: { id: true },
       });
 
       if (!user) {

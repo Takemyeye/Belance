@@ -1,15 +1,15 @@
 import { Module } from '@nestjs/common';
-import { TodosModule } from './todos/todos.module';
+import { AuthGuard } from './guard/auth.guard';
+import { AuthModule } from './auth/auth.module';
+import { UserModule } from './user/user.module';
+import { UserService } from './user/user.service';
 import { PrismaModule } from './prisma/prisma.module';
 import { UserController } from './user/user.controller';
-import { UserService } from './user/user.service';
-import { AuthGuard } from './guard/auth.guard';
 
 @Module({
-  imports: [TodosModule, PrismaModule ],
+  imports: [PrismaModule, AuthModule, UserModule],
   controllers: [UserController],
   providers: [UserService, AuthGuard],
 }) 
 
 export class AppModule {}
-

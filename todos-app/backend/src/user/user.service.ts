@@ -17,7 +17,8 @@ export class UserService {
       select: {
         name: true,
         email: true,
-        id: true,
+        provider: true,
+        avatar: true,
       }
     })
 
@@ -32,7 +33,10 @@ export class UserService {
   async create(name: string, email: string, password: string) {
 
     const existUser = await this.prisma.user.findFirst({
-      where: { email },
+      where: { 
+        email, 
+        provider: "Belance" 
+      },
       select: {
         id: true
       }
