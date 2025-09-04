@@ -1,6 +1,8 @@
+import CardUi from "@/app/ui/card";
 import { useEffect, useRef } from "react";
 import { initialCards } from '@/app/data/cards';
-import CardUi from "@/app/ui/card";
+import SimpleUiCard from "@/app/ui/simpleCard";
+import { simpleCards } from "@/app/data/simpleCard";
 
 export default function RightContainer() {
   const loopRef = useRef<HTMLDivElement>(null);
@@ -39,11 +41,21 @@ export default function RightContainer() {
 
   return (
     <div className="reg_right_container">
+      <div className="reg_simple_cards">
+        {simpleCards.map((card, idx) => (
+          <SimpleUiCard 
+            key={idx}
+            icon={card.icon}
+            text={card.text}
+            description={card.description}
+          />
+        ))}
+      </div>
       <img src="/image/reg_template.webp" alt="template" />
       <div className="reg_loop" ref={loopRef}>
         {duplicatedCards.map((card, idx) => (
           <CardUi
-            key={`${card.id}-${idx}`}
+            key={idx}
             title={card.title}
             content={card.content}
             bgColor={card.bgColor}

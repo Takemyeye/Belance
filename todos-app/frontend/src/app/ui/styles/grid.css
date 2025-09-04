@@ -1,0 +1,25 @@
+.reg_grid {
+  width: 90%;
+  height: 80%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.reg_cell {
+  border: 1px solid rgba(255, 255, 255, 0.150);
+}
+
+.reg_cell:nth-child(1) {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.reg_cell:nth-child(4) {
+  grid-column: 1;
+  grid-row: 2 / span 2;
+}

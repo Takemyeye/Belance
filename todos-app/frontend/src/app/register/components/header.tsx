@@ -10,7 +10,7 @@ export default function RegHeader() {
         <FontAwesomeIcon
           icon={faAlignLeft}
           size="2x"
-          color="#ffffff"
+          color="#d4f6ed"
           style={{ width: "24px", height: "24px" }}
         />
         <h2>Belance</h2>
