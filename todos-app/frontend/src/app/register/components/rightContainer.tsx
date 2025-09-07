@@ -6,7 +6,8 @@ import { simpleCards } from "@/app/data/simpleCard";
 
 export default function RightContainer() {
   const loopRef = useRef<HTMLDivElement>(null);
-  const speed = 1;
+  const containerRef = useRef<HTMLDivElement>(null);
+  const speedRef = useRef(1.7);
 
   const duplicatedCards = [...initialCards, ...initialCards, ...initialCards];
 
@@ -20,7 +21,7 @@ export default function RightContainer() {
     let animationId: number;
 
     const step = () => {
-      offset += speed;
+      offset += speedRef.current;
 
       if (offset >= blockHeight) {
         for (let i = 0; i < initialCards.length; i++) {
@@ -39,8 +40,39 @@ export default function RightContainer() {
     return () => cancelAnimationFrame(animationId);
   }, []);
 
+  useEffect(() => {
+    const wrapper = containerRef.current;
+    const loop = loopRef.current;
+
+    if(!wrapper || !loop) return;
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const wrapperRect = wrapper.getBoundingClientRect();
+
+      const wrapperCenterY = wrapperRect.top + wrapperRect.height / 2;
+      const dist = Math.abs(e.clientY - wrapperCenterY);
+
+      const maxDist = wrapperRect.height / 2;
+      const factor = Math.min(dist / maxDist, 1);
+
+      speedRef.current = 0.6 + factor * 1.7;
+
+      console.log(speedRef.current);
+    };
+
+    wrapper.addEventListener("mousemove", handleMouseMove);
+    wrapper.addEventListener("mouseleave", () => {
+      speedRef.current = 1.7;
+    });
+
+    return () => {
+      wrapper.removeEventListener("mousemove", handleMouseMove);
+    };
+
+  }, [])
+
   return (
-    <div className="reg_right_container">
+    <div className="reg_right_container" ref={containerRef}>
       <div className="reg_simple_cards">
         {simpleCards.map((card, idx) => (
           <SimpleUiCard 
