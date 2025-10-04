@@ -1,20 +1,19 @@
 'use client'
 
-import Squares from '../ui/squares'
+import TextType from '../ui/textType'
 import './style.css'
 
 export default function Test () {
 
   return (
     <div className='styles'>
-      <Squares
-        speed={0.2} 
-        squareSize={75}
-        direction='diagonal'
-        borderColor='#ffffff3d'
-        hoverFillColor='#2222229d'
-        />
-      
+      <TextType
+        text={["привет босс", "исправьте мой маккк", "отдайте деньги ментат"]}
+        typingSpeed={100}
+        pauseDuration={1500}
+        showCursor={true}
+        cursorCharacter="|"
+      />
     </div>
   )
 }
