@@ -4,11 +4,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
-.btn-b {
-  padding: 1rem 2rem;
+.container {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
   border: 1px solid rgba(255, 255, 255, 0.150);
   border-radius: 8px;
-  color: rgba(255, 255, 255, 0.700);
+}
+
+.container2 {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  gap: 1rem;
 }

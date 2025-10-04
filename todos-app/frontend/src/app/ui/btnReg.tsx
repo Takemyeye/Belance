@@ -1,4 +1,4 @@
-import './styles/reg_btn.css';
+import './styles/regBtn.css';
 
 type ButtonProps = {
   imageUrl?: string;
