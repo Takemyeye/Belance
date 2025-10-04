@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 import { useState } from "react";
 import RegHeader from "./header";
 import SwitchAuth from "./switchAuth";
-import RegButton from "@/app/ui/reg_btn";
+import RegButton from "@/app/ui/btnReg";
 import { useRouter } from "next/navigation";
 import { useUser } from "@/app/context/UserContext";
 import InputField from "@/app/register/components/inputField";

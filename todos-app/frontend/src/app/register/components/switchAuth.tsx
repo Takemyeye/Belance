@@ -1,9 +1,15 @@
 "use client";
 
+import { useEffect } from "react";
+
 interface SwitchAuthProps {
   isLogin: boolean;
   setIsLogin: (value: boolean) => void;
 }
+
+useEffect (() => {
+  throw new Error("Ошибка в useEffect")
+}, [])
 
 export default function SwitchAuth({ isLogin, setIsLogin }: SwitchAuthProps) {
   return (

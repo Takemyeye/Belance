@@ -56,8 +56,6 @@ export default function RightContainer() {
       const factor = Math.min(dist / maxDist, 1);
 
       speedRef.current = 0.6 + factor * 1.7;
-
-      console.log(speedRef.current);
     };
 
     wrapper.addEventListener("mousemove", handleMouseMove);
