@@ -10,7 +10,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning>
         <UserProvider initialUser={initialUser}>
           {children}
         </UserProvider>
